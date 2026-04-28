@@ -7,7 +7,7 @@ import { Id } from "../../../../convex/_generated/dataModel";
 import { api } from "../../../../convex/_generated/api";
 
 const convex = new ConvexHttpClient(process.env.NEXT_PUBLIC_CONVEX_URL!);
-
+console.log("Hello from the server actions!");
 
 
 export async function getDocuments(ids: Id<"documents">[]) {
